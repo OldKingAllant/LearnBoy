@@ -1,0 +1,9 @@
+.vs
+.vs/*
+cli/*
+Poco
+Poco/*
+SDL2
+SDL2/*
+cli
+cli/*

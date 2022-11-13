@@ -1,0 +1,12 @@
+[submodule "cli"]
+	path = cli
+	url = https://github.com/daniele77/cli.git
+	branch = master
+[submodule "sdl2"]
+	path = SDL2
+	url = https://github.com/libsdl-org/SDL.git
+	branch = main
+[submodule "Poco"]
+	path = Poco
+	url = https://github.com/pocoproject/poco.git
+	branch = devel
