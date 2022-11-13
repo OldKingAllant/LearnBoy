@@ -1,8 +1,6 @@
 DIR="$(pwd)"
 cd ./SDL2
 mkdir -p build && cd build
-#export CC="D:/Programming/source_dir/Clang/llvm-build/Release/bin/clang.exe"
-#export CXX="D:/Programming/source_dir/Clang/llvm-build/Release/bin/clang++.exe"
 export PREFIX=$DIR/3rdparty/SDL2
 echo $DIR
 cmake -A x64 .. -DCMAKE_BUILD_TYPE=Release
