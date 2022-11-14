@@ -15,11 +15,10 @@ The system being emulated is the DMG, no Gameboy Color emulation.
 
 <h1>Building</h1>
 
-Clone the repository with git clone --recursive, which
-will download the dependencies.
-Then run ./build.sh that will build the dependencies,
-copy the required files in the 3rdparty directory
-and run cmake . in the root directory of the project.
+    git clone --recursive [REPOSITORY URL]
+    cd [Cloned repository]
+    ./build.sh (or .bat)
+    cmake .
 
 Then use make or Visual Studio to build the emulator.
 
@@ -27,7 +26,7 @@ Then use make or Visual Studio to build the emulator.
 
 From command line:
 
-learnboy <ROM PATH> [OPTIONS]
+learnboy ROM PATH [OPTIONS]
 
 The options are:
 <ul>
