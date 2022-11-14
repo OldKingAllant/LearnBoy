@@ -1,3 +1,7 @@
+md 3rdparty
+md 3rdparty/libs
+md 3rdparty/Poco
+md 3rdparty/SDL2
 cd ./SDL2
 md build 2>NUL
 cd build
