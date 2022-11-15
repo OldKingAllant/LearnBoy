@@ -49,7 +49,7 @@ SET(SRC
 ADD_EXECUTABLE(learnboy ${SRC})
 
 
-TARGET_INCLUDE_DIRECTORIES(learnboy PUBLIC ./Moudules/cli/include)
+TARGET_INCLUDE_DIRECTORIES(learnboy PUBLIC ./Modules/cli/include)
 TARGET_INCLUDE_DIRECTORIES(learnboy PUBLIC ./3rdparty/SDL2/include)
 TARGET_INCLUDE_DIRECTORIES(learnboy PUBLIC ./3rdparty/Poco/include)
 TARGET_INCLUDE_DIRECTORIES(learnboy PUBLIC ./3rdparty/fmt/include)
