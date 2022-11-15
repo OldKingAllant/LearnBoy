@@ -3,6 +3,8 @@
 #include "../../common/Common.h"
 #include "OamEntry.h"
 
+#include <algorithm>
+
 namespace GameboyEmu::Graphics {
 
 	struct BgPixel {
