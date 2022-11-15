@@ -15,6 +15,10 @@ The system being emulated is the DMG, no Gameboy Color emulation.
 
 <h1>Building</h1>
 
+The project uses c++20, which is almost completely supported by
+Clang, MSVC and GCC. Unfortunately, std::format seems to
+be not yet supported by default on Clang. Use GCC instead
+
     git clone --recursive [REPOSITORY URL]
     cd [Cloned repository]
     ./build.sh (or .bat)
