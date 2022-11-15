@@ -102,14 +102,10 @@ namespace GameboyEmu::Cartridge {
 	}
 
 	std::size_t Mbc3::DumpState(byte* buffer, std::size_t offset) {
-		_ASSERT(0 && "Unimplemented");
-
 		return offset;
 	}
 
 	std::size_t Mbc3::LoadState(byte* buffer, std::size_t offset) {
-		_ASSERT(0 && "Unimplemented");
-
 		return offset;
 	}
 

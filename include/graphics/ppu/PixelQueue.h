@@ -146,8 +146,6 @@ namespace GameboyEmu::Graphics {
 
 	template <typename PixelType, size_t Len>
 	void PixelQueue<PixelType, Len>::pop() {
-		_ASSERT(len != 0);
-
 		if (len == 0)
 			return;
 
