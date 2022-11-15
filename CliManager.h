@@ -1,8 +1,8 @@
 #pragma once
 
-#include "cli/include/cli/cli.h"
-#include "cli/include/cli/loopscheduler.h"
-#include "cli/include/cli/clilocalsession.h"
+#include "cli/cli.h"
+#include "cli/loopscheduler.h"
+#include "cli/clilocalsession.h"
 
 #include <vector>
 

@@ -10,6 +10,7 @@
 #include "include/save/Savestate.h"
 
 #include <vector>
+#include <fmt/format.h>
 
 using EmulatorState = GameboyEmu::State::EmulatorState;
 using Cpu = GameboyEmu::CPU::Cpu;
@@ -240,7 +241,7 @@ void CliManager::init_commands() {
         auto backtrace = this->debugger->Backtrace();
 
         while (!backtrace.empty()) {
-            out << std::format("0x{:x} ?? ()\n",
+            out << fmt::format("0x{:x} ?? ()\n",
                 backtrace.top().callee);
 
             backtrace.pop();
@@ -402,7 +403,7 @@ void OutputCpuState(std::ostream& out,
     Cpu* cpu) {
     auto const& ctx = cpu->GetContext();
 
-    out << std::format(
+    out << fmt::format(
         "IP = 0x{0:x} "
         "SP = 0x{1:x} "
         "AF = 0x{2:x} "
@@ -430,7 +431,7 @@ void CliManager::step(std::ostream& out) {
 
     auto res = Disassemble(currentip, state->GetMemory());
 
-    out << std::format(
+    out << fmt::format(
         "{0} at 0x{1:x}\n",
         res.first,
         currentip
@@ -489,7 +490,7 @@ void CliManager::brlist(std::ostream& out) {
         word address = key_value.first;
         auto const& br = key_value.second;
 
-        out << std::format(
+        out << fmt::format(
             "0x{0:x} : {{"
             " bank = 0x{1:x}"
             " hitrate = 0x{2:x}"
@@ -545,7 +546,7 @@ void CliManager::disassemble_1(std::ostream& out, word address) {
     auto dis = GameboyEmu::CPU::Disassemble(address,
         state->GetMemory());
 
-    out << std::format("0x{0:x} | {1}\n",
+    out << fmt::format("0x{0:x} | {1}\n",
         address, dis.first);
 }
 
@@ -562,7 +563,7 @@ void CliManager::disassemble_rng(std::ostream& out, word address, word end) {
             address, mem
         );
 
-        out << std::format("0x{0:x} | {1}\n",
+        out << fmt::format("0x{0:x} | {1}\n",
             address, dis.first);
 
         address += dis.second;
