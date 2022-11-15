@@ -16,7 +16,13 @@ namespace GameboyEmu::Timing {
 
 		std::tm time_point{};
 
+#ifdef _MSC_VER
 		localtime_s(&time_point, &time);
+#else 
+		time_point = localtime(&time);
+#endif // _MSC_VER
+
+		
 
 		return time_point;
 	}
