@@ -16,8 +16,9 @@ The system being emulated is the DMG, no Gameboy Color emulation.
 <h1>Building</h1>
 
 The project uses c++20, which is almost completely supported by
-Clang, MSVC and GCC. Unfortunately, std::format seems to
-be not yet supported by default on Clang. Use GCC instead
+Clang, MSVC and GCC. std::format is not supported by clang and
+gcc versions under 15 and 13 respectively. It seems that for most linux
+distributions this project cannot be built.
 
     git clone --recursive [REPOSITORY URL]
     cd [Cloned repository]
