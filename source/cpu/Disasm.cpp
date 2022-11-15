@@ -1,7 +1,7 @@
 #include "../../include/cpu/Disasm.h"
 #include "../../include/memory/Memory.h"
 
-#include <format>
+#include <fmt/format.h>
 
 namespace GameboyEmu::CPU {
 
@@ -36,7 +36,7 @@ namespace GameboyEmu::CPU {
 		while (numParams-- && (unsigned)address + 1 <= 0xFFFF) {
 			address++;
 
-			ret += std::format(" 0x{:x}", mem->Read(address));
+			ret += fmt::format(" 0x{:x}", mem->Read(address));
 		}
 
 		return std::pair(ret, address - oldaddress + 1);

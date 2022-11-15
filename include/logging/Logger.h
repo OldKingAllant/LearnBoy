@@ -1,6 +1,6 @@
 #pragma once
 
-#include <format>
+#include <fmt/format.h>
 #include <string_view>
 #include <iostream>
 
@@ -32,8 +32,8 @@ public :
 	template <typename... Args>
 	void log_info(std::string_view fmt,
 		Args&&... args) {
-		std::cout << std::vformat(
-			fmt, std::make_format_args(
+		std::cout << fmt::vformat(
+			fmt, fmt::make_format_args(
 				std::forward<Args>(args)...
 			)
 		);
@@ -42,8 +42,8 @@ public :
 	template <typename... Args>
 	void log_warn(std::string_view fmt,
 		Args&&... args) {
-		std::cout << std::vformat(
-			fmt, std::make_format_args(
+		std::cout << fmt::vformat(
+			fmt, fmt::make_format_args(
 				std::forward<Args>(args)...
 			)
 		);
@@ -52,8 +52,8 @@ public :
 	template <typename... Args>
 	void log_err(std::string_view fmt,
 		Args&&... args) {
-		std::cout << std::vformat(
-			fmt, std::make_format_args(
+		std::cout << fmt::vformat(
+			fmt, fmt::make_format_args(
 				std::forward<Args>(args)...
 			)
 		);

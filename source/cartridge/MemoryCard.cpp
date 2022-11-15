@@ -1,7 +1,7 @@
 #include "../../include/cartridge/MemoryCard.h"
 
 #include "../../include/cartridge/CardUtils.h"
-#include <format>
+#include <fmt/format.h>
 
 namespace GameboyEmu {
 	namespace Cartridge {
@@ -123,14 +123,14 @@ namespace GameboyEmu {
 			if (m_manufacturer.has_value()) {
 				auto const& manSpan = m_manufacturer.value();
 
-				manufacturer = ::std::format(
+				manufacturer = fmt::format(
 					"{:x} {:x} {:x} {:x}",
 					manSpan[0], manSpan[1],
 					manSpan[2], manSpan[3]
 				);
 			}
 
-			return std::format(
+			return fmt::format(
 				"Title : {0}\nManufacturer : {1}\n"
 				"CGB Flag : {2:x}\nNew licensee code : {3:x}\n"
 				"Type : {4:x}\nRom size : {5:x}\n"

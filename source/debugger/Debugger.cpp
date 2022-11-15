@@ -47,7 +47,7 @@ namespace GameboyEmu::Debugger {
 		CPU::CpuContext const& ctx = m_state->GetCPU()
 			->GetContext();
 
-		out << std::format(
+		out << fmt::format(
 			"Instruction Pointer : 0x{0:x}\n"
 			"A : 0x{1:x}, F : {2:b}\n"
 			"B : 0x{3:x}, C : 0x{4:x}\n"
@@ -197,12 +197,12 @@ namespace GameboyEmu::Debugger {
 			&& !br);
 
 		if (useout && br) {
-			out << std::format("Breakpoint hit at IP = 0x{:x}\n", 
+			out << fmt::format("Breakpoint hit at IP = 0x{:x}\n",
 				cpu->GetIP());
 		}
 
 		if (useout && m_state->ShouldBreak()) {
-			out << std::format("Break request at IP = 0x{:x}\n",
+			out << fmt::format("Break request at IP = 0x{:x}\n",
 				cpu->GetIP());
 		}
 
@@ -215,7 +215,7 @@ namespace GameboyEmu::Debugger {
 
 		if (page != 0 && address > 0x7FFF) {
 			if (useout) {
-				out << std::format("{0}:{1:x} Is invalid\n", page,
+				out << fmt::format("{0}:{1:x} Is invalid\n", page,
 					address);
 			}
 

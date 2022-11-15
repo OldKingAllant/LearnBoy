@@ -9,7 +9,7 @@ namespace GameboyEmu::Sound {
 	public :
 		SdlOutputDevice(Logger& logger);
 
-		std::string const& GetDeviceName() const override;
+		std::string GetDeviceName() const override;
 
 		int GetFrequency() const override;
 		byte GetSilence() const override;

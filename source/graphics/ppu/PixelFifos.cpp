@@ -301,7 +301,7 @@ namespace GameboyEmu::Graphics {
 				* of a tile
 				*/
 				word index = m_mem->ppu_read_vram(m_tilemap);
-				byte index_copy = index;
+				byte index_copy = (byte)index;
 
 				index *= 16;
 

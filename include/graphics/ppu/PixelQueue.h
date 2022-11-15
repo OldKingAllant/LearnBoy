@@ -161,7 +161,7 @@ namespace GameboyEmu::Graphics {
 		int curr_pixel = 7 - ignore;
 
 		if (!empty()) {
-			for (unsigned i = first; i <= last && curr_pixel >= 0; i++) {
+			for (unsigned i = (unsigned)first; i <= last && curr_pixel >= 0; i++) {
 				if (pixels[i].x == obj.x_pos) {
 					if (pixels[i].oam_index > obj.oam_index || pixels[i].blank) {
 						byte bit1 = GET_BIT(low, curr_pixel);

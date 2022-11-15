@@ -53,7 +53,7 @@ namespace GameboyEmu::Sound {
 		SDL_PauseAudioDevice(m_device_id, 0);
 	}
 
-	std::string const& SdlOutputDevice::GetDeviceName() const {
+	std::string SdlOutputDevice::GetDeviceName() const {
 		return "SdlOutputDevice";
 	}
 

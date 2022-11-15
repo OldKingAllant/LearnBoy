@@ -10,3 +10,7 @@
 	path = Modules/Poco
 	url = https://github.com/pocoproject/poco.git
 	branch = devel
+[submodule "fmt"]
+	path = Modules/fmt
+	url = https://github.com/fmtlib/fmt.git
+	branch = master

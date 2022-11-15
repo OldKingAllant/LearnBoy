@@ -8,7 +8,7 @@ namespace GameboyEmu::Sound {
 	public :
 		OutputDevice() = default;
 
-		virtual std::string const& GetDeviceName() const = 0;
+		virtual std::string GetDeviceName() const = 0;
 
 		virtual int GetFrequency() const = 0;
 		virtual byte GetSilence() const = 0;
