@@ -70,7 +70,7 @@ namespace GameboyEmu {
 
 			out_dev->Init();
 
-			m_last_frame = std::chrono::high_resolution_clock::now();
+			m_last_frame = std::chrono::steady_clock::now();
 		}
 
 		bool EmulatorState::Stopped() const {
