@@ -9,13 +9,13 @@ The macros log the file and the line
 */
 
 #define LOG_INFO(logger, fmt, ...) \
-    logger.log_info("I {0}:{1} " fmt, __FILE__, __LINE__, __VA_ARGS__)
+    logger.log_info("I {0}:{1} " fmt, __FILE__, __LINE__, ## __VA_ARGS__)
 
 #define LOG_WARN(logger, fmt, ...) \
-    logger.log_warn("W {0}:{1} " fmt, __FILE__, __LINE__, __VA_ARGS__)
+    logger.log_warn("W {0}:{1} " fmt, __FILE__, __LINE__, ## __VA_ARGS__)
 
 #define LOG_ERR(logger, fmt, ...) \
-    logger.log_err("E {0}:{1} " fmt, __FILE__, __LINE__, __VA_ARGS__)
+    logger.log_err("E {0}:{1} " fmt, __FILE__, __LINE__, ## __VA_ARGS__)
 
 class Logger {
 public :
