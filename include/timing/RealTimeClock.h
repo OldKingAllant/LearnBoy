@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../common/Common.h"
+#include <ctime>
 
 namespace GameboyEmu::Timing {
 	class RealTimeClock {

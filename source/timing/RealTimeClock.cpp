@@ -1,7 +1,6 @@
 #include "../../include/timing/RealTimeClock.h"
 
 #include <chrono>
-#include <ctime>
 
 namespace GameboyEmu::Timing {
 	RealTimeClock::RealTimeClock() :
