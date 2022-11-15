@@ -133,7 +133,7 @@ namespace cbInstructions = GameboyEmu::CPU::cbInstructions;
 
 
 
-__forceinline void stacktrace_push(
+inline void stacktrace_push(
 	GameboyEmu::State::EmulatorState* state,
 	word callee, word dest, word ret
 ) {
@@ -154,7 +154,7 @@ __forceinline void stacktrace_push(
 	}
 }
 
-__forceinline void stacktrace_pop(
+inline void stacktrace_pop(
 	GameboyEmu::State::EmulatorState* state,
 	word ret
 ) {
