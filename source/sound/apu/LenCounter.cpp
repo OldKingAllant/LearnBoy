@@ -16,6 +16,6 @@ namespace GameboyEmu::Sound {
 	}
 
 	void LenCounter::Reload(word len) {
-		m_len =  m_max_len - len;
+		m_len =  len == 0 ? m_max_len : len;
 	}
 }
