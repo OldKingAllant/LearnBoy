@@ -3,6 +3,7 @@
 #include "../common/Common.h"
 
 #include <mutex>
+#include <atomic>
 
 namespace GameboyEmu::Mem {
 	class Memory;
@@ -44,8 +45,8 @@ namespace GameboyEmu::DataTransfer {
 		static constexpr unsigned clock_rate = 512;
 
 	private :
-		std::atomic_uint8_t m_data_transfer;
-		std::atomic_uint8_t m_flag;
+		std::atomic_uchar m_data_transfer;
+		std::atomic_uchar m_flag;
 		ClockType m_clock;
 
 		word m_curr_cycles;
