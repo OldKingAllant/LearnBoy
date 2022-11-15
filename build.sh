@@ -14,10 +14,10 @@ export PREFIX=$DIR/3rdparty/Poco
 cd ../../Poco
 mkdir -p build_poco && cd build_poco
 cmake -DCMAKE_INSTALL_PREFIX=$PREFIX ..
-cmake --build . --target install --parallel --config Release
+cmake --build . --target install --config Release
 cd ../../fmt
 export PREFIX=$DIR/3rdparty/fmt
-mdkir -p build && cd build
+mkdir -p build && cd build
 cmake -DCMAKE_INSTALL_PREFIX=$PREFIX ..
 cmake --build . --target install --config Release
 cd $DIR

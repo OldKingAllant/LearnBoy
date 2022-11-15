@@ -4,6 +4,7 @@
 #include <map>
 #include <vector>
 #include <chrono>
+#include <atomic>
 
 #include "../common/Common.h"
 #include "../logging/Logger.h"
@@ -143,7 +144,7 @@ namespace GameboyEmu {
 
 			~EmulatorState();
 
-			__forceinline bool IsDebugging() const {
+			inline bool IsDebugging() const {
 				return m_debugging;
 			}
 
@@ -155,7 +156,7 @@ namespace GameboyEmu {
 			bool WatchpointsEnabled() const;
 			void EnableWatchpoints(bool value);
 
-			__forceinline bool StacktraceEnabled() const {
+			inline bool StacktraceEnabled() const {
 				return m_enable_stacktrace;
 			}
 

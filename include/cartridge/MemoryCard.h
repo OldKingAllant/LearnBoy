@@ -52,6 +52,7 @@
 #include <optional>
 #include <string_view>
 #include <vector>
+#include <string>
 
 #include "../cheats/GameShark.h"
 
