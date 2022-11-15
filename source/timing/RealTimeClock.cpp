@@ -19,7 +19,7 @@ namespace GameboyEmu::Timing {
 #ifdef _MSC_VER
 		localtime_s(&time_point, &time);
 #else 
-		time_point = localtime(&time);
+		time_point = *localtime(&time);
 #endif // _MSC_VER
 
 		
