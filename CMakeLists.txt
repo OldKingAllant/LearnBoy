@@ -54,10 +54,10 @@ TARGET_INCLUDE_DIRECTORIES(learnboy PUBLIC ./3rdparty/SDL2/include)
 TARGET_INCLUDE_DIRECTORIES(learnboy PUBLIC ./3rdparty/Poco/include)
 TARGET_INCLUDE_DIRECTORIES(learnboy PUBLIC ./3rdparty/fmt/include)
 
-TARGET_LINK_LIBRARIES(learnboy PUBLIC ./3rdparty/SDL2/lib/SDL2)
-TARGET_LINK_LIBRARIES(learnboy PUBLIC ./3rdparty/Poco/lib/PocoFoundation)
-TARGET_LINK_LIBRARIES(learnboy PUBLIC ./3rdparty/Poco/lib/PocoNet)
-TARGET_LINK_LIBRARIES(learnboy PUBLIC ./3rdparty/fmt/lib/fmt)
+TARGET_LINK_LIBRARIES(learnboy PUBLIC 3rdparty/SDL2/lib/SDL2)
+TARGET_LINK_LIBRARIES(learnboy PUBLIC 3rdparty/Poco/lib/PocoFoundation)
+TARGET_LINK_LIBRARIES(learnboy PUBLIC 3rdparty/Poco/lib/PocoNet)
+TARGET_LINK_LIBRARIES(learnboy PUBLIC 3rdparty/fmt/lib/fmt)
 
 
 
