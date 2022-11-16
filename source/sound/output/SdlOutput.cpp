@@ -30,7 +30,7 @@ namespace GameboyEmu::Sound {
 	void SdlOutputDevice::Init() {
 		if (SDL_InitSubSystem(SDL_INIT_AUDIO)) {
 			LOG_ERR(m_logger, "Fatal error, could not init audio\n");
-			LOG_ERR(m_logger, "{}\n", SDL_GetError());
+			LOG_ERR(m_logger, "{2}\n", SDL_GetError());
 			std::exit(0);
 		}
 		
