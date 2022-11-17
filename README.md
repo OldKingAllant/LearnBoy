@@ -81,22 +81,28 @@ More updates in the future (like adding more commands and documentation)
 <h1>Images</h1>
 <table>
   <tr>
-    <td>Blargg's CPU Instructions test</td>
+    <td><strong>Blargg's CPU Instructions test</strong></td>
     <td><img src="./images/cpu.PNG"></td>
-    <td>instr_timing</td>
+    <td><strong>instr_timing</strong></td>
     <td><img src="./images/instr_timing.PNG"></td>
   </tr>
   <tr>
-    <td>mem_timing</td>
+    <td><strong>mem_timing</strong></td>
     <td><img src="./images/mem_timing.PNG"></td>
-    <td>Super Mario Land</td>
+    <td><strong>Super Mario Land</strong></td>
     <td><img src="./images/super_mario.PNG"></td>
   </tr>
   <tr>
-    <td>Tetris</td>
+    <td><strong>Tetris</strong></td>
     <td><img src="./images/tetris.PNG"></td>
-    <td>Tetris two players</td>
+    <td><strong>Tetris two players</strong></td>
     <td><img src="./images/tetris_two_players.PNG"></td>
+  </tr>
+  <tr>
+    <td><strong>The Legend of Zelda</strong></td>
+    <td><img src="./images/zelda.PNG"></td>
+    <td><strong>Pokemon Red</strong></td>
+    <td><img src="./images/red.PNG"></td>
   </tr>
 </table>
 
