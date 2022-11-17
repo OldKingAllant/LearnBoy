@@ -11,14 +11,14 @@ The system being emulated is the DMG, no Gameboy Color emulation.
   <li>SDL2 For graphics and audio</li>
   <li>Poco libraries for UDP sockets</li>
   <li>Cli library</li>
+  <li>fmt Library</li>
 </ul>
 
 <h1>Building</h1>
 
 The project uses c++20, which is almost completely supported by
-Clang, MSVC and GCC. std::format is not supported by clang and
-gcc versions under 15 and 13 respectively. It seems that for most linux
-distributions this project cannot be built.
+Clang, MSVC and GCC. std::format has been replaced by
+the fmt library
 
     git clone --recursive [REPOSITORY URL]
     cd [Cloned repository]
