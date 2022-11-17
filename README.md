@@ -78,4 +78,26 @@ More updates in the future (like adding more commands and documentation)
   <li>SGB functions</li>
 </ul>
 
+<h1>Images</h1>
+<table>
+  <tr>
+    <td>Blargg's CPU Instructions test</td>
+    <td><img src="./images/cpu.PNG"></td>
+    <td>instr_timing</td>
+    <td><img src="./images/instr_timing.PNG"></td>
+  </tr>
+  <tr>
+    <td>mem_timing</td>
+    <td><img src="./images/mem_timing.PNG"></td>
+    <td>Super Mario Land</td>
+    <td><img src="./images/super_mario.PNG"></td>
+  </tr>
+  <tr>
+    <td>Tetris</td>
+    <td><img src="./images/tetris.PNG"></td>
+    <td>Tetris two players</td>
+    <td><img src="./images/tetris_two_players.PNG"></td>
+  </tr>
+</table>
+
 <strong>You are free to download this emulator and modify it</strong>
